@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mail Assistant</title>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script src="indexf.js" defer></script>
+<script type="text/javascript">
+(function(){
+  emailjs.init("-7sKv0_oKaJouB9dh");
+})();
+</script>
+  </head>
+  <body>
+    <div >>
+        <div align="center">
+          <img src="logo.jpg" style="width: 300px;">
+        </div>
+        <div >
+          <h1 style="font-size: 3rem;">Getting feedback made easier with us</h1>
+          <div class="form-group">
+            <h2 for="name">ID</h2>
+            <input
+              type="text"
+              class="form-control"
+              id="id"
+              placeholder="Enter ID or Roll No"
+            />
+          </div>
+          <div class="form-group">
+            <h2 for="name">Name</h2>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter name"
+            />
+          </div>
+            <div class="form-group">
+            <h2>feedback</h2>
+            <textarea
+              type="text"
+              class="form-control"
+              rows="10"
+              cols="100"
+              id="feedback"
+              placeholder="Write your feedback here"
+              width="200px"
+            ></textarea>
+          </div>
+          <br>
+            <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

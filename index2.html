@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mail Assistant</title>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script src="index2.js" defer></script>
+<script type="text/javascript">
+(function(){
+  emailjs.init("KoIpKsZw9GvyyZp0Y");
+})();
+</script>
+  </head>
+  <body>
+    <div >>
+        <div align="center">
+          <img src="logo.jpg" style="width: 300px;">
+        </div>
+        <div >
+          <h1 style="font-size: 3rem;">Inform your Leave with us</h1>
+          <div class="form-group">
+            <h2 for="sname">Sender Name</h2>
+            <input
+              type="text"
+              class="form-control"
+              id="sname"
+              placeholder="Enter reciever name"
+            />
+          </div>
+          <div class="form-group">
+            <h2 for="name">sender Mail</h2>
+            <input
+              type="email"
+              class="form-control"
+              id="sender"
+              placeholder="Enter name"
+            />
+          </div>
+          <div class="form-group">
+            <h2 for="rname">Reciever Name</h2>
+            <input
+              type="text"
+              class="form-control"
+              id="rname"
+              placeholder="Enter reciever name"
+            />
+          </div>
+          <div class="form-group">
+            <h2>Leave Date (enter from date if your leave is more than 1day)</h2>
+            <input
+              type="date"
+              class="form-control"
+              id="ldate"
+              placeholder="Enter number"
+            />
+          </div>
+          <div class="form-group">
+            <h2>arrival date after leave</h2>
+            <input
+              type="date"
+              class="form-control"
+              id="adate"
+              placeholder="Enter number"
+            />
+          </div>
+          <div class="form-group">
+            <h2>No of days</h2>
+            <input
+              type="number"
+              class="form-control"
+              id="ndays"
+              placeholder="Enter number"
+            />
+          </div>
+          <div class="form-group">
+            <h2 for="email">Email</h2>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter email"
+            />
+          </div>
+          <br>
+          <br>
+            <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
